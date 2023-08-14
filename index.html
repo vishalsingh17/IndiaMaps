@@ -1,18 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
 <title>Indian Tricolor Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">  
 </head>
-<body>
-  <div class="tricolor-background">
-    <!-- <img class="tricolor-image saffron" src="Map1.jpg" alt="Saffron" />
-    <img class="tricolor-image white" src="Map2.jpg" alt="White" />
-    <img class="tricolor-image green" src="Map3.jpg" alt="Green" /> -->
-    <h1>Welcome to Our Website</h1>
-    <p>Explore the beauty and diversity of India.</p>
-  </div>
-</body>
+  <body>
+    <h1 class="custom-h1 text-center"> <span class="saffron">Welcome</span>
+        <span class="white">to our</span>
+        <span class="blue">Website</span></h1>
+    <p class="text-center">Explore the beauty and diversity of India.</p>
+    
+    
+   
+    
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-4 m-md-0 mb-1">
+          <div class="card">
+            <img src="Map1.jpg" class="card-img-top" alt="Image 1">
+            <a href="http://127.0.0.1:5500/Map1.jpg" class="btn btn-primary mt-3" onclick="downloadImage('http://127.0.0.1:5500/Map1.jpg', 'Map1.jpg')">Download</a>
+          </div>
+        </div>
+        <div class="col-md-4 m-md-0 mb-1">
+          <div class="card">
+            <img src="Map2.jpg" class="card-img-top " alt="Image 2">
+            <a href="http://127.0.0.1:5500/Map2.jpg" class="btn btn-primary mt-3" onclick="downloadImage('http://127.0.0.1:5500/Map2.jpg', 'Map2.jpg')">Download</a>
+          </div>
+        </div>
+        <div class="col-md-4 m-md-0 mb-1">
+          <div class="card">
+            <img src="Map3.jpg" class="card-img-top" alt="Image 3">
+            <a href="http://127.0.0.1:5500/Map3.jpg" class="btn btn-primary mt-3" onclick="downloadImage('http://127.0.0.1:5500/Map3.jpg', 'Map3.jpg')">Download</a>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-4 m-md-0 mb-1">
+          <div class="card">
+            <img src="Map4.jpg" class="card-img-top" alt="Image 4">
+            <a href="http://127.0.0.1:5500/Map4.jpg" class="btn btn-primary mt-3" onclick="downloadImage('http://127.0.0.1:5500/Map4.jpg', 'Map4.jpg')">Download</a>
+          </div>
+        </div>
+        <div class="col-md-4 m-md-0 mb-1">
+          <div class="card">
+            <img src="Map5.jpg" class="card-img-top" alt="Image 5">
+            <a href="http://127.0.0.1:5500/Map5.jpg" class="btn btn-primary mt-3" onclick="downloadImage('http://127.0.0.1:5500/Map5.jpg', 'Map5.jpg')">Download</a>
+          </div>
+        </div>
+        <div class="col-md-4 m-md-0 mb-1">
+          <div class="card">
+            <img src="Map6.jpg" class="card-img-top" alt="Image 6" >
+            <a href="http://127.0.0.1:5500/Map6.jpg" class="btn btn-primary mt-3" onclick="downloadImage('http://127.0.0.1:5500/Map6.jpg', 'Map6.jpg')">Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  
+    
+    
+    
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script>
+
+function downloadImage(url, filename) {
+  // Create an anchor element
+  var anchor = document.createElement('a');
+  anchor.href = url;
+  anchor.download = filename;
+
+  // Trigger a click event on the anchor element
+  anchor.click();
+}
+  </script>
+  </body>
 </html>
